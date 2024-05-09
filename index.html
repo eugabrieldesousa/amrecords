@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vetixy/circular-std@1.0.0/dist/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <title>Am Records</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="nav-left">
+                <img src="./img/logo.png" alt="" class="logo">
+            </div>
+            <div class="nav-right">
+                <div class="nav-item" id="quemsomos-nav">Quem Somos</div>
+                <div class="nav-item" id="artistas-nav">Artistas</div>
+                <div class="nav-item" id="trabalhe-conosco-nav">Trabalhe conosco</div>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="carrosel" src="/img/violao.jpeg" alt=""></div>
+                <div class="swiper-slide"><img class="carrosel" src="./img/estudio.jpeg" alt=""></div>
+                <div class="swiper-slide"><img class="carrosel" src="./img/bateria.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="about-us" id="quemsomos-target">
+            <div class="texto-titulo">
+                Quem somos?
+            </div>
+            <div class="texto-conteudo">
+                Bem-vindo à <span>AM Records</span>, onde a paixão pela música se une à excelência criativa. Somos um
+                <span>estúdio de produção musical</span> que vai além dos limites convencionais, trazendo inovação e
+                dedicação a cada projeto que abraçamos.Nosso compromisso vai além de simplesmente gravar músicas. Na AM
+                Records, somos impulsionados pela busca incansável da perfeição, oferecendo uma ampla <span>gama de
+                    serviços</span> que abrangem desde a produção musical até a criação de vídeos cativantes.
+            </div>
+        </div>
+
+        <div class="artistas" id="artistas-target">
+            <div class="texto-titulo artista-titulo">
+                Artistas
+            </div>
+            <div class="videos">
+                <div class="img-artistas"><video class="video" src="./videos/video1.mp4" autoplay muted loop></video>
+                    <p>Figurante</p>
+                </div>
+
+                <div class="img-artistas"><video class="video" src="./videos/video2.mp4" autoplay muted loop></video>
+                    <p>Estevão</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="trabalhe-conosco" id="trabalhe-conosco-target">
+            <div class="contato">Contata a gente!</div>
+            <a class="contato-button"
+                href="https://api.whatsapp.com/send/?phone=554896025441&text&type=phone_number&app_absent=0">Entrar em
+                Contato</a>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+        <script>
+            // script.js
+            document.getElementById("quemsomos-nav").addEventListener("click", function () {
+                // Obtém a posição do topo da seção de destino
+                const targetSection = document.getElementById("quemsomos-target");
+                const targetPosition = targetSection.offsetTop;
+
+                // Faz a rolagem para a posição da seção de destino
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: "smooth" // Para uma rolagem suave, use "smooth"
+                });
+            });
+
+            document.getElementById("artistas-nav").addEventListener("click", function () {
+                // Obtém a posição do topo da seção de destino
+                const targetSection = document.getElementById("artistas-target");
+                const targetPosition = targetSection.offsetTop;
+
+                // Faz a rolagem para a posição da seção de destino
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: "smooth" // Para uma rolagem suave, use "smooth"
+                });
+            });
+
+            document.getElementById("trabalhe-conosco-nav").addEventListener("click", function () {
+                // Obtém a posição do topo da seção de destino
+                const targetSection = document.getElementById("trabalhe-conosco-target");
+                const targetPosition = targetSection.offsetTop;
+
+                // Faz a rolagem para a posição da seção de destino
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: "smooth" // Para uma rolagem suave, use "smooth"
+                });
+            });
+
+        </script>
+    </div>
+
+</body>
+
+</html>

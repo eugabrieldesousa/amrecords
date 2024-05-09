@@ -1,0 +1,170 @@
+.navbar>* {
+    margin: 1.3rem;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 13px 20px -13px rgba(0, 0, 0, 0.39);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    font-family: CircularStd;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 10rem;
+}
+
+.logo {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.nav-item {
+    margin: 1rem;
+}
+
+.nav-item:hover {
+    color: #71E385;
+    cursor: pointer;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 55rem;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about-us {
+    padding: 12rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #71E385;
+    align-items: center;
+    text-align: center;
+}
+
+
+.texto-titulo {
+    padding: 1rem;
+    font-family: CircularStd;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 20rem;
+    font-size: 3rem;
+}
+
+.artista-titulo {
+    margin-top: 4rem;
+}
+
+.texto-conteudo {
+    padding: 1rem;
+    font-family: CircularStd;
+    font-weight: 400;
+    width: 30rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+span {
+    font-weight: 550;
+}
+
+
+.artistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-artistas {
+    padding: 6rem;
+}
+
+.video {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 10px 10px 17px -3px rgba(0, 0, 0, 0.44);
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p {
+    margin-top: 1rem;
+    font-family: CircularStd;
+    font-weight: 600;
+}
+
+.trabalhe-conosco {
+    background-color: #E38C71;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabalhe-conosco>* {
+    padding: 10rem;
+}
+
+.contato {
+    font-family: CircularStd;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.contato-button {
+    font-family: CircularStd;
+    font-weight: 800;
+    font-size: 2rem;
+    background-color: #71E385;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 17px -3px rgba(0, 0, 0, 0.44);
+    color: black;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #357e42;
+    color: #beffc9;
+}
